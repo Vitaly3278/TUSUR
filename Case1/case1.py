@@ -1,15 +1,6 @@
 import psycopg2
 from psycopg2 import Error
 
-lst = []
-
-
-def add_data(data):
-    for st in data:
-        lst.append(st)
-    return lst
-
-
 try:
     connection = psycopg2.connect(user="postgres",
                                   password="1234",
